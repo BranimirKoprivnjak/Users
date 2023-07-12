@@ -1,0 +1,29 @@
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+  "firstName": "Branimir",
+  "lastName": "Koprivnjak",
+  "phoneNumber": "+385981674758"
+}
+
+###
+
+GET http://localhost:8000/users?page=1
+
+###
+
+GET http://localhost:8000/users/64a7d99859fec4a2a3262e56
+
+###
+
+PUT http://localhost:8000/users/64ad5907c465ae87b3949471
+Content-Type: application/json
+
+{
+  "firstName": "Ivica"
+}
+
+###
+
+DELETE  http://localhost:8000/users/64a7d99859fec4a2a3262e56
